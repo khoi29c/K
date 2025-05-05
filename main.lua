@@ -1,5 +1,9 @@
-if game.PlaceId == 2753915549 then
-    print("[SWIFT] Script chạy trong Blox Fruits thành công!")
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/khoi29c/K/main/main.lua"))()
+end)
+
+if success then
+    print("[SWIFT] Script đã chạy thành công!")
 else
-    warn("[SWIFT] Đây không phải là Blox Fruits.")
+    warn("[SWIFT] Lỗi khi tải hoặc chạy script: ", err)
 end
