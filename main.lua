@@ -5,5 +5,5 @@ end)
 if success then
     print("[SWIFT] Script đã chạy thành công!")
 else
-    warn("[SWIFT] Lỗi khi tải hoặc chạy script: ", err)
+    warn("[SWIFT] Lỗi khi chạy script từ GitHub: " .. tostring(err))
 end
